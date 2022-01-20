@@ -17,14 +17,4 @@ class IndexController extends AbstractController
     {
         return $this->render('index/index.html.twig', []);
     }
-
-    /**
-     * @Route("/page/{id}", name="page", methods={"GET"})
-     */
-    public function page(Page $page): Response
-    {
-        return $this->render('index/page.html.twig', [
-            'page' => $page,
-        ]);
-    }
 }
